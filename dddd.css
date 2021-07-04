@@ -1,0 +1,38 @@
+hover color ::  
+
+#2D3F64;
+
+#0B0F32
+p : #7F83A1;
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+<header>
+	<div class="logo"><a href="#">max<span class="up">up.</span></a>
+	</div>
+	<div class="toggle active"></div>
+	<div>
+		<ul class="navigation active">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Pricing</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+	<div class="header-button"><a href="#">Get Started</a></div>
+</header>
+
+
+<script>
+    const menuToggle = document.querySelector('.toggle');
+    const navigation = document.querySelector('.navigation');
+    menuToggle.onclick = function(){
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+    }
+</script>
